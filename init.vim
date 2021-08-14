@@ -17,6 +17,9 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Fugitive (a git plugin)
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " lsp config
@@ -32,6 +35,7 @@ let mapleader = " " " map leader to Space
 let g:airline#extensions#tabline#enabled = 1 " set buffer tabbing on
 let g:airline_theme='base16_gruvbox_dark_hard'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#enabled=1
 
 set number
 set relativenumber
